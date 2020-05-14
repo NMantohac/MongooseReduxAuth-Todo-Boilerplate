@@ -1,12 +1,12 @@
 const router = require('express').Router();
-// const todoRoutes = require('./todoRoutes');
+const todoRoutes = require('./todoRoutes');
 const userRoutes = require('./userRoutes');
 const authRoutes = require('./authRoutes');
 
 // /api
 
 // /api/todo
-// router.use('/todo', todoRoutes);
+router.use('/todos', todoRoutes);
 
 // /api/user
 router.use('/user', userRoutes);
