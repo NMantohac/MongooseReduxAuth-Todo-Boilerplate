@@ -11,5 +11,5 @@ module.exports = {
     } catch (e) {
       return res.status(403).json({ e });
     }
-  }
-}
+  },
+};

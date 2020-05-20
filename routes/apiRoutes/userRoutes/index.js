@@ -1,7 +1,13 @@
 const router = require('express').Router();
-const { addTodo, getAllUserEmails, getAllUserTodos, deleteUserTodoById, updateUserTodoById } = require('./../../../controllers/userController');
+const {
+  addTodo,
+  getAllUserEmails,
+  getAllUserTodos,
+  deleteUserTodoById,
+  updateUserTodoById,
+} = require('../../../controllers/userController');
 
-const { requireAuth } = require('./../../../middlewares/authMiddleware');
+const { requireAuth } = require('../../../middlewares/authMiddleware');
 
 // /api/user
 
